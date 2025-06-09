@@ -30,7 +30,7 @@ func apiHandler(w http.ResponseWriter, r *http.Request) {
 "status":"Success"
 }`
 
-	fmt.Fprint(w, response)
+	fmt.Fprintf(w, response)
 }
 
 func loggingMiddleware(next http.HandlerFunc) http.HandlerFunc {
